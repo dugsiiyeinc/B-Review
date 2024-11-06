@@ -93,12 +93,12 @@ header button:hover {
   padding-inline: 0.5rem;
 }
 .main-banner {
-  background-color: #333;
+  background-color: #100f0f;
   background-image: url("/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 210px 0 100px;
+  padding: 270px 0 400px;
 }
 .hero-content {
   display: flex;
@@ -126,7 +126,7 @@ header button:hover {
     font-style: normal;
   }
   
-.btn {
+ .btn {
   color: #ff565b;
   background-color: #ffffff;
   padding: 11px 25px;
@@ -141,5 +141,23 @@ header button:hover {
   color: #ffffff;
   background-color: #ff565b;
 }
-
+.btn--dark {
+    color: #ffffff;
+    background-color: #ff565b;
+    transition: background-color 0.3s;
+  }
+  
+  .btn--dark:hover {
+    background-color: #2a2a2a;
+  }
+  
+  .btn--fullwidth {
+    width: 100%;
+  }
+  
+  .section {
+    margin-top: 60px;
+    padding-top: 60px;
+  }
+  
 /* Responsive Design */

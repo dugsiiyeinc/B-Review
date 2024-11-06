@@ -6,6 +6,7 @@
     <title>BReview</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/landingStyle.css">
+    <link rel="stylesheet" href="./styles/searchig-form.css">
     
 </head>
 <body>
@@ -28,7 +29,7 @@
         <!-- main bannar or section hero -->
          <section class="main-banner container">
            <div class="hero-content">
-            <h6 class="content__title">We provide everything</h6>
+            <h3 class="content__title">We provide everything</h3>
             <h2 class="content__description">
                 <em class="em">Business </em>Review
               </h2>
@@ -36,6 +37,43 @@
               <button class="btn">View Details</button>
            </div>
          </section>
+         <section class="search-form container">
+            <form class="form">
+             <div>
+                <fieldset class="form__fieldset">
+                    <label for="seacrhTitle" class="form__label">
+                      Search Work by Title
+                    </label>
+                    <input
+                      type="text"
+                      name="searchTitle"
+                      class="form__text"
+                      placeholder="Type any work title..."
+                      required
+                    />
+                  </fieldset>
+        
+                  <fieldset class="form__fieldset">
+                    <label for="chooseCategory" class="form__label">
+                      Choose Category
+                    </label>
+                    <select name="Category" class="form__select" id="chooseCategory">
+                      <option selected>Choose Category</option>
+                      <option type="checkbox" name="option1" value="Interior Design">
+                        Interior Design
+                      </option>
+                      <option value="Exterior Design">Exterior Design</option>
+                      <option value="New Ideas">New Ideas</option>
+                      <option value="Trendy Design">Trendy Design</option>
+                    </select>
+                  </fieldset>
+             </div>
+
+              <fieldset class="form__fieldset form__fieldset--fullwidth">
+                <button class="btn btn--dark btn--fullwidth">Search Now</button>
+              </fieldset>
+            </form>
+          </section>
     </main>
 </body>
 </html>
