@@ -1,79 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BReview</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/landingStyle.css">
-    <link rel="stylesheet" href="./styles/searchig-form.css">
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/landingStyle.css" />
+    <link rel="stylesheet" href="./styles/searchig-form.css" />
+    <link rel="stylesheet" href="utilis.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <h1>BReview</h1>
-        </div>
-        <div class="nav-bar">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Details</a></li>
-            </ul>
-            <form id="search-form">
-                <input type="text" placeholder="Search" class="search-input" id="search-input" >
-            </form>
-            <button> <i class="fa-solid fa-user"></i>Sign In</button>
-        </div>
+      <div class="logo">
+        <h1>BReview</h1>
+      </div>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Details</a></li>
+        </ul>
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="Search"
+            class="search-input"
+            id="search-input"
+          />
+        </form>
+        <button><i class="fa-solid fa-user"></i>Sign In</button>
+      </div>
     </header>
     <main class="main">
-        <!-- main bannar or section hero -->
-         <section class="main-banner container">
-           <div class="hero-content">
+      <!-- main bannar or section hero -->
+      <section class="main-banner">
+        <div class="container">
+          <div class="hero-content">
             <h3 class="content__title">We provide everything</h3>
             <h2 class="content__description">
-                <em class="em">Business </em>Review
-              </h2>
-              <!-- this button is using a utility class -->
-              <button class="btn">View Details</button>
-           </div>
-         </section>
-         <section class="search-form container">
-            <form class="form">
-             <div>
-                <fieldset class="form__fieldset">
-                    <label for="seacrhTitle" class="form__label">
-                      Search Work by Title
-                    </label>
-                    <input
-                      type="text"
-                      name="searchTitle"
-                      class="form__text"
-                      placeholder="Type any work title..."
-                      required
-                    />
-                  </fieldset>
-        
-                  <fieldset class="form__fieldset">
-                    <label for="chooseCategory" class="form__label">
-                      Choose Category
-                    </label>
-                    <select name="Category" class="form__select" id="chooseCategory">
-                      <option selected>Choose Category</option>
-                      <option type="checkbox" name="option1" value="Interior Design">
-                        Interior Design
-                      </option>
-                      <option value="Exterior Design">Exterior Design</option>
-                      <option value="New Ideas">New Ideas</option>
-                      <option value="Trendy Design">Trendy Design</option>
-                    </select>
-                  </fieldset>
-             </div>
+              <em class="em">Business </em>Review
+            </h2>
+            <!-- this button is using a utility class -->
+            <button class="btn">View Details</button>
+          </div>
+        </div>
+      </section>
+      <section class="search-form container">
+        <form class="form">
+          <div>
+            <fieldset class="form__fieldset">
+              <label for="seacrhTitle" class="form__label">
+                Search Work by Title
+              </label>
+              <input
+                type="text"
+                name="searchTitle"
+                class="form__text"
+                placeholder="Type any work title..."
+                required
+              />
+            </fieldset>
 
-              <fieldset class="form__fieldset form__fieldset--fullwidth">
-                <button class="btn btn--dark btn--fullwidth">Search Now</button>
-              </fieldset>
-            </form>
-          </section>
+            <fieldset class="form__fieldset">
+              <label for="chooseCategory" class="form__label">
+                Choose Category
+              </label>
+              <select name="Category" class="form__select" id="chooseCategory">
+                <option selected>Choose Category</option>
+                <option type="checkbox" name="option1" value="Interior Design">
+                  Interior Design
+                </option>
+                <option value="Exterior Design">Exterior Design</option>
+                <option value="New Ideas">New Ideas</option>
+                <option value="Trendy Design">Trendy Design</option>
+              </select>
+            </fieldset>
+          </div>
+
+          <fieldset class="form__fieldset form__fieldset--fullwidth">
+            <button class="btn btn--dark btn--fullwidth">Search Now</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="some-br container">
+        <section id="business-review">
+          <div class="container">
+            <h2 class="title">
+              some of our latest <br />
+              <em class="em">Business Review</em>
+            </h2>
+            <p class="section-description">
+              Read in-depth reviews and analyses of the latest businesses. Get
+              insights, ratings, and expert opinions on industry leaders and
+              emerging players.
+            </p>
+            <div class="reviews">
+              <div class="review-card">
+                <h3>Company Name 1</h3>
+                <p class="review-rating">Rating: 4.5/5</p>
+                <p class="review-summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  euismod ex at felis hendrerit, eget bibendum lectus sodales.
+                </p>
+                <a href="#" class="read-more">Read Full Review</a>
+              </div>
+              <div class="review-card">
+                <h3>Company Name 2</h3>
+                <p class="review-rating">Rating: 4.2/5</p>
+                <p class="review-summary">
+                  Vivamus sit amet consectetur risus, sit amet fringilla ligula.
+                  Nullam feugiat sapien vitae mauris cursus, eu lobortis orci
+                  feugiat.
+                </p>
+                <a href="#" class="read-more">Read Full Review</a>
+              </div>
+              <div class="review-card">
+                <h3>Company Name 3</h3>
+                <p class="review-rating">Rating: 3.8/5</p>
+                <p class="review-summary">
+                  Integer aliquam risus at felis feugiat, vitae tempor lectus
+                  sollicitudin. Cras aliquet dui vel dolor cursus, id maximus
+                  tortor tempor.
+                </p>
+                <a href="#" class="read-more">Read Full Review</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
-</body>
+  </body>
 </html>
