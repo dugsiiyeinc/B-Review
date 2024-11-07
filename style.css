@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Sen", sans-serif;
+  }
+  
+
+  /* ===========User registration form================ */
+  .registrationContainer{
+    background-color: transparent;
+    width: 500px;
+    padding: 30px;
+    margin: 70px auto;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+  }
+  
+  .registrationContainer h2 {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px;
+  }
+  
+  .registrationContainer #userRegistrationForm .inputName {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #userRegistrationForm input:focus {
+    outline: none;
+  }
+  
+  ::placeholder {
+    color: #5a5959;
+  }
+  
+  .fa-user, .fa-envelope, .fa-lock {
+    padding: 8px 11px;
+  }
+  
+  #userRegistrationForm .inputName .name, .email, .password{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+  }
+  
+  #userRegistrationForm .userPhoto{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+
+  }
+  #userRegistrationForm .inputName i {
+    position: absolute;
+    border-right: 1px solid #000;
+    font-size: 1rem;
+    padding: 8px;
+    height: 45px;
+  }
+  
+  #userRegistrationForm .regBtn {
+    background-color: #f98866;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px;
+  }
+  
+  .regBtn a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .regBtn:hover {
+    background-color: #f98866;
+    color: #000;
+  }
+  
+  
+  .valid{
+    border: 2px solid green;
+    
+  }
+  
+  .invalid{
+    border: 2px solid red;
+  }
