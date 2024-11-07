@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Registration B-Review</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
+    <body
+        style="background-image: linear-gradient(rgba(19, 18, 18, 0.6), rgba(19, 18, 18, 0.6)),
+      url(review.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh;">
+        <div class="registrationContainer">
+            <h2>Sign UP</h2>
+            <form id="userRegistrationForm">
+                <div class="inputName">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="User Name"
+                        id="username" class="name" required>
+                </div>
+                <div class="inputName">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email"
+                        class="email" id="email" required>
+                </div>
+                <div class="inputName">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password"
+                        placeholder="Password" class="password" id="password"
+                        required>
+                </div>
+                <div class="inputName">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password2"
+                        placeholder="Confirm Password" id="confirmPassword"
+                        class="password" required>
+                </div>
+
+                <div class="inputName">
+                    <input type="file" name="photo"
+                        placeholder="upload photo" id="user photo"
+                        class="userPhoto" required>
+                </div>
+
+                <button type="submit" id="btn" class="regBtn"><a
+                        href="#">Register</a></button>
+            </form>
+        
+        </div>
+        <script src="main.js"></script>
+    </body>
+
+</html>
