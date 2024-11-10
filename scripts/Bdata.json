@@ -1,0 +1,28 @@
+[
+    {
+        "id":1,
+        "Bnames":"Hormuud",
+        "logo":"images/hormuud.png"
+
+    },
+    {
+        "id":2,
+        "Bnames":"Astaan",
+        "logo":"images/astaan.png"
+    },
+    {
+        "id":3,
+        "Bnames":"BileTv",
+        "logo":"./images/.biletv.png"
+    },
+    {
+        "id":4,
+        "Bnames":"Salama Bank",
+        "logo":"./images/.salamaBank.jpg"
+    },
+    {
+        "id":5,
+        "Bnames":"Dahabshil Bank",
+        "logo":"./images/.dahabshil.jpg"
+    }
+]
