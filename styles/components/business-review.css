@@ -1,7 +1,6 @@
 
   /* Business Review Section */
   #business-review {
- 
     padding: 40px 0;
     color: #333;
   }
@@ -29,8 +28,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
-    /* display: flex;
-    justify-content: space-around; */
+    display: flex;
+    justify-content: space-around;
   }
   
   #business-review .review-card {
