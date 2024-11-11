@@ -128,37 +128,7 @@ header button:hover {
   color: #f98866;
     font-style: normal;
   }
-  
- .btn {
-  color: #f98866;
-  background-color: #ffffff;
-  padding: 11px 25px;
-  border-radius: 7px;
-  font-size: 16px;
-  font-weight: 400;
-  transition: color 0.3s, background-color 0.3s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  color: #ffffff;
-  background-color: #ff565b;
-}
-.btn--dark {
-    color: #ffffff;
-    background-color: #f98866;
-    transition: background-color 0.3s;
-  }
-  
-  .btn--dark:hover {
-    background-color: #2a2a2a;
-  }
-  
-  .btn--fullwidth {
-    width: 100%;
-  }
-  
-  .section {
+.section {
     margin-top: 60px;
     padding-top: 60px;
   }
