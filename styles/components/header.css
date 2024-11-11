@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #4b4b4d;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f98866;
+}
+
+header .nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header .nav-bar ul li {
+  display: inline;
+}
+
+header .nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+header .nav-bar ul li a:hover {
+  background-color: #f98866;
+  border-radius: 4px;
+}
+
+header #search-form {
+  margin-left: 20px;
+  display: flex;
+  flex: 1;
+}
+
+header .search-input {
+  flex: 1 !important;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 400px;
+}
+
+header button {
+  padding: 10px 20px;
+  background-color: #f98866;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header button i {
+  margin-right: 8px;
+}
+
+header button:hover {
+  background-color: #f39c12;
+}
+  
+/* Responsive Design */
