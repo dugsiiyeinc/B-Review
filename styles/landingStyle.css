@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background-color: #2c3e50;
+  background-color: #4b4b4d;
   color: white;
 }
 
@@ -47,7 +47,7 @@ header .nav-bar ul li a {
 }
 
 header .nav-bar ul li a:hover {
-  background-color: #34495e;
+  background-color: #f98866;
   border-radius: 4px;
 }
 
@@ -69,7 +69,7 @@ header .search-input {
 
 header button {
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: #f98866;
   border: none;
   color: white;
   font-size: 16px;
@@ -85,7 +85,7 @@ header button i {
 }
 
 header button:hover {
-  background-color: #2980b9;
+  background-color: #f39c12;
 }
 .container {
   max-width: 1400px;
@@ -93,8 +93,8 @@ header button:hover {
   padding-inline: 0.5rem;
 }
 .main-banner {
-  background-color: #100f0f;
-  background-image: url("/hero.jpg");
+  background: linear-gradient(rgba(19, 18, 18, 0.6), rgba(19, 18, 18, 0.6)),
+  url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -124,12 +124,12 @@ header button:hover {
   margin: 15px 0 25px;
 }
 .content__description .em {
-    color: #ff565b;
+  color: #f98866;
     font-style: normal;
   }
   
  .btn {
-  color: #ff565b;
+  color: #f98866;
   background-color: #ffffff;
   padding: 11px 25px;
   border-radius: 7px;
@@ -145,7 +145,7 @@ header button:hover {
 }
 .btn--dark {
     color: #ffffff;
-    background-color: #ff565b;
+    background-color: #f98866;
     transition: background-color 0.3s;
   }
   

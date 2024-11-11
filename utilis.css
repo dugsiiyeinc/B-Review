@@ -5,7 +5,7 @@
 }
 
 .btn {
-  color: #ff565b;
+  color: #f98866;
   background-color: #ffffff;
   padding: 11px 25px;
   border-radius: 7px;
@@ -17,17 +17,17 @@
 
 .btn:hover {
   color: #ffffff;
-  background-color: #ff565b;
+  background-color: #f98866;
 }
 
 .btn--dark {
   color: #ffffff;
-  background-color: #ff565b;
+  background-color: #f98866;
   transition: background-color 0.3s;
 }
 
 .btn--dark:hover {
-  background-color: #2a2a2a;
+  background-color: #f98866;
 }
 
 .btn--fullwidth {
@@ -50,7 +50,7 @@
 
 .em {
   font-style: normal;
-  color: #ff565b;
+  color: #f98866;
 }
 
 .title .em {
@@ -61,7 +61,7 @@
 .title .em::before {
   width: 80px;
   height: 2px;
-  background-color: #ff565b;
+  background-color: #f98866;
   content: "";
   position: absolute;
   left: 0;
@@ -70,7 +70,7 @@
 
 .em {
   font-style: normal;
-  color: #ff565b;
+  color: #f98866;
 }
 
 
