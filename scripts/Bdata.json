@@ -2,27 +2,32 @@
     {
         "id":1,
         "Bnames":"Hormuud",
-        "logo":"images/hormuud.png"
+        "logo":"images/hormuud.png",
+        "title":"telecommunications company"
 
     },
     {
         "id":2,
         "Bnames":"Astaan",
-        "logo":"images/astaan.png"
+        "logo":"images/astaan.png",
+        "title":"Tv and Entertainment Films Channel"
     },
     {
         "id":3,
         "Bnames":"BileTv",
-        "logo":"./images/.biletv.png"
+        "logo":"./images/.biletv.png",
+        "title":"TV ,Films & Entertainment Channel"
     },
     {
         "id":4,
         "Bnames":"Salama Bank",
-        "logo":"./images/.salamaBank.jpg"
+        "logo":"./images/.salamaBank.jpg",
+        "title":"As a financial institution, the bank provides personal banking and corporate banking."
     },
     {
         "id":5,
         "Bnames":"Dahabshil Bank",
-        "logo":"./images/.dahabshil.jpg"
+        "logo":"./images/.dahabshil.jpg",
+        "title":" Somali funds transfer company, and is the largest money-transfer business in Africa."
     }
 ]
