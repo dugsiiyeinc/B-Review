@@ -124,7 +124,7 @@
 
 .containerLogIn #loginForm h1 {
   font-weight: bold;
-  color: #f98866;
+  color: #fff;
   text-align: center;
   font-size: 24px;
   line-height: 24px;
@@ -135,7 +135,7 @@
   width: 100%;
   height: 35px;
   background: transparent;
-  border-bottom: 1px solid #a1be95;
+  border-bottom: 1px solid #f98866;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -158,8 +158,8 @@
 .login {
   width: 250px;
   height: 40px;
-  background: #a1be95;
-  color: #f98866 !important;
+  background: #f98866;
+  color: #fff;
   border: none;
   margin-top: 30px;
   margin-left: 25px;
@@ -167,10 +167,6 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.4s ease;
-}
-
-.login:hover {
-  background: #f98866;
 }
 
 .login a {
