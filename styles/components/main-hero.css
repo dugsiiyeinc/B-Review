@@ -34,26 +34,49 @@
   color: #f98866;
   font-style: normal;
 }
-.form{
+.form {
   position: relative;
+  width: 100%;
+  max-width: 600px; /* Optional: limit max width of the form */
+  margin: 0 auto; /* Center the form */
 }
 
-.search-form{
-  padding: 2rem;
+.search-form {
+  padding: 10px 30px;
   width: 100%;
   border-radius: 50px;
+  padding-left: 40px; /* Space for the icon */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+  border: none;
+}
 
-  
+.fa-search {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: #383838cc;
+  font-size: 18px;
 }
-.fa-search{
-position: absolute;
-left: 20px;
-bottom:50px;
-color: #383838cc;
-}
-.form-control{
 
+.form-control {
+  background-color: #f98866;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Center the button vertically */
 }
+
+.form-control:hover {
+  background-color: #e76d4b; /* Darken on hover */
+}
+
 .section {
   margin-top: 60px;
   padding-top: 60px;

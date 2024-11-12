@@ -1,172 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BReview</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/main-hero.css" />
+    <link rel="stylesheet" href="/styles/components/business-review.css" />
+    <link rel="stylesheet" href="./styles/components/searchig-form.css" />
+    <link rel="stylesheet" href="./styles/utilis.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BReview</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./styles/components/header.css" />
-  <link rel="stylesheet" href="./styles/components/main-hero.css" />
-  <link rel="stylesheet" href="/styles/components/business-review.css" />
-  <link rel="stylesheet" href="./styles/components/searchig-form.css" />
-  <link rel="stylesheet" href="./styles/utilis.css" />
-  <link rel="stylesheet" href="./styles/components/footer.css" />
-  <link rel="stylesheet" href="./styles/global.css" />
-</head>
-
-<body>
-  <header>
-    <div class="logo">
-      <h1>BReview</h1>
-    </div>
-    <div class="nav-bar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="pages/admin.html">Create Business</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Details</a></li>
-        <li><a href="#">Contect Us</a></li>
-      </ul>
-      <button><i class="fa-solid fa-user"></i>Sign In</button>
-    </div>
-  </header>
-  <main class="main">
-    <!-- main bannar or section hero -->
-    <section class="main-banner">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="content__title">Discover.Business.Review</h1>
-          <h2 class="content__description">
-            platform for creatives around the world
-          </h2>
-          <form class="form" >
-            <input type="text" class="search-form" placeholder="Type any  Business  title..." aria-label="Search" required>
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <button type="submit" class="form-control">Search</button>
-          </form>
-        </div>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>BReview</h1>
       </div>
-    </section>
-    <!-- seaching Business Section form -->
-    <!-- <section class="search-form container">
-      <form class="form">
-        <label for="seacrhTitle" class="form__label">
-          Search Business by Name
-        </label>
-        <input type="text" name="searchTitle" class="form__text" placeholder="Type any  Business  title..." required />
-        <button class="btn btn--dark btn--fullwidth">Search Now</button>
-      </form>
-    </section> -->
-    <!-- Business Review Section simple -->
-    <section class="some-br container">
-      <section id="business-review">
+      <div class="nav-bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="pages/admin.html">Create Business</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Details</a></li>
+          <li><a href="#">Contect Us</a></li>
+        </ul>
+        <button><i class="fa-solid fa-user"></i>Sign In</button>
+      </div>
+    </header>
+    <main class="main">
+      <!-- main bannar or section hero -->
+      <section class="main-banner">
         <div class="container">
-          <h2 class="title">
-            some of our latest <br />
-            <em class="em">Business Review</em>
-          </h2>
-          <p class="section-description">
-            Read in-depth reviews and analyses of the latest businesses. Get
-            insights, ratings, and expert opinions on industry leaders and
-            emerging players.
-          </p>
-          <div class="reviews">
-            <div class="review-card">
-              <h3>Company Name 1</h3>
-              <p class="review-rating">Rating: 4.5/5</p>
-              <p class="review-summary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                euismod ex at felis hendrerit, eget bibendum lectus sodales.
-              </p>
-              <a href="#" class="read-more">Read Full Review</a>
-            </div>
-            <div class="review-card">
-              <h3>Company Name 2</h3>
-              <p class="review-rating">Rating: 4.2/5</p>
-              <p class="review-summary">
-                Vivamus sit amet consectetur risus, sit amet fringilla ligula.
-                Nullam feugiat sapien vitae mauris cursus, eu lobortis orci
-                feugiat.
-              </p>
-              <a href="#" class="read-more">Read Full Review</a>
-            </div>
-            <div class="review-card">
-              <h3>Company Name 3</h3>
-              <p class="review-rating">Rating: 3.8/5</p>
-              <p class="review-summary">
-                Integer aliquam risus at felis feugiat, vitae tempor lectus
-                sollicitudin. Cras aliquet dui vel dolor cursus, id maximus
-                tortor tempor.
-              </p>
-              <a href="#" class="read-more">Read Full Review</a>
-            </div>
+          <div class="hero-content">
+            <h1 class="content__title">Discover.Business.Review</h1>
+            <h2 class="content__description">
+              platform for creatives around the world
+            </h2>
+             <!-- seaching Business Section form -->
+            <form class="form">
+              <input
+                type="text"
+                class="search-form"
+                placeholder="Search Business title..."
+                required
+              />
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <button type="submit" class="form-control">Search</button>
+            </form>
           </div>
         </div>
       </section>
-    </section>
-  </main>
+     
+      <!-- Business Review Section simple -->
+      <section class="some-br container">
+        <section id="business-review">
+          <div class="container">
+            <h2 class="title">
+              some of our latest <br />
+              <em class="em">Business Review</em>
+            </h2>
+            <p class="section-description">
+              Read in-depth reviews and analyses of the latest businesses. Get
+              insights, ratings, and expert opinions on industry leaders and
+              emerging players.
+            </p>
+            <div class="reviews">
+              <div class="review-card">
+                <h3>Company Name 1</h3>
+                <p class="review-rating">Rating: 4.5/5</p>
+                <p class="review-summary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  euismod ex at felis hendrerit, eget bibendum lectus sodales.
+                </p>
+                <a href="#" class="read-more">Read Full Review</a>
+              </div>
+              <div class="review-card">
+                <h3>Company Name 2</h3>
+                <p class="review-rating">Rating: 4.2/5</p>
+                <p class="review-summary">
+                  Vivamus sit amet consectetur risus, sit amet fringilla ligula.
+                  Nullam feugiat sapien vitae mauris cursus, eu lobortis orci
+                  feugiat.
+                </p>
+                <a href="#" class="read-more">Read Full Review</a>
+              </div>
+              <div class="review-card">
+                <h3>Company Name 3</h3>
+                <p class="review-rating">Rating: 3.8/5</p>
+                <p class="review-summary">
+                  Integer aliquam risus at felis feugiat, vitae tempor lectus
+                  sollicitudin. Cras aliquet dui vel dolor cursus, id maximus
+                  tortor tempor.
+                </p>
+                <a href="#" class="read-more">Read Full Review</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h1>
-          <em class="em">Business Review</em>
-        </h1>
-        <h2 class="footer-title">About Us</h2>
-        <p class="footer-description">
-          We are a leading company providing top-notch solutions to help
-          businesses grow. Customer satisfaction is our priority.
-        </p>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h1>
+            <em class="em">Business Review</em>
+          </h1>
+          <h2 class="footer-title">About Us</h2>
+          <p class="footer-description">
+            We are a leading company providing top-notch solutions to help
+            businesses grow. Customer satisfaction is our priority.
+          </p>
+        </div>
 
-      <div class="footer-section">
-        <h2 class="footer-title">Quick Links</h2>
-        <ul class="footer-links">
-          <li><a href="#" class="footer-link">About Us</a></li>
-          <li><a href="#" class="footer-link">Our Services</a></li>
-          <li><a href="#" class="footer-link">Contact</a></li>
-          <li><a href="#" class="footer-link">FAQs</a></li>
-        </ul>
-      </div>
+        <div class="footer-section">
+          <h2 class="footer-title">Quick Links</h2>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Our Services</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+          </ul>
+        </div>
 
-      <div class="footer-section">
-        <h2 class="footer-title">Contact Us</h2>
-        <p class="footer-text">
-          <strong>Email:</strong>
-          <a href="mailto:support@yourbusiness.com" class="footer-link">support@BReview.com</a>
-        </p>
-        <p class="footer-text"><strong>Phone:</strong> +252 61 5000000</p>
-        <p class="footer-text">
-          <strong>Address:</strong> 123 Business St, MOGADISHU,BANADIR, 12345
-        </p>
-      </div>
+        <div class="footer-section">
+          <h2 class="footer-title">Contact Us</h2>
+          <p class="footer-text">
+            <strong>Email:</strong>
+            <a href="mailto:support@yourbusiness.com" class="footer-link"
+              >support@BReview.com</a
+            >
+          </p>
+          <p class="footer-text"><strong>Phone:</strong> +252 61 5000000</p>
+          <p class="footer-text">
+            <strong>Address:</strong> 123 Business St, MOGADISHU,BANADIR, 12345
+          </p>
+        </div>
 
-      <div class="footer-section">
-        <h2 class="footer-title">Follow Us</h2>
-        <div class="social-icons">
-          <a href="#" class="social-link" target="_blank">
-            <i class="fa-brands fa-facebook social-icon"></i>
-          </a>
-          <a href="#" class="social-link" target="_blank">
-            <i class="fa-solid fa-x social-icon"></i>
-          </a>
-          <a href="#" class="social-link" target="_blank">
-            <i class="fa-brands fa-linkedin social-icon"></i>
-          </a>
+        <div class="footer-section">
+          <h2 class="footer-title">Follow Us</h2>
+          <div class="social-icons">
+            <a href="#" class="social-link" target="_blank">
+              <i class="fa-brands fa-facebook social-icon"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+              <i class="fa-solid fa-x social-icon"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+              <i class="fa-brands fa-linkedin social-icon"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <p class="footer-copyright">
-        © 2024 Your BReview. All rights reserved.
-      </p>
-    </div>
-  </footer>
-</body>
-
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2024 Your BReview. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
