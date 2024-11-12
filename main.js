@@ -1,0 +1,143 @@
+
+//form-validation
+const userRegistrationForm = document.querySelector('#userRegistrationForm');
+const username = document.querySelector('#username');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
+const confirmPassword = document.querySelector('#confirmPassword');
+const error = document.querySelector('#error');
+const success = document.querySelector('#success');
+
+//User Registration
+userRegistrationForm.addEventListener('submit', function(event){
+    event.preventDefault(); 
+   
+    error.textContent = ''
+    success.textContent = ''
+
+    const isValidUserName = validUsername();
+    const isValidEmail = validateEmail();
+    const isValidPassword = validatePassword();
+    const isvalidConfirmPassword = validateConfirmPassword();
+ 
+    if(!isValidUserName){
+        username.focus();
+        return;
+    }
+    else if(!isValidEmail){
+        email.focus();
+        return;
+    } 
+
+    else if(!isValidPassword){
+        password.focus();
+        return ;
+    }
+
+    else if(!isvalidConfirmPassword){
+        confirmPassword.focus() ; 
+        return;
+    }
+        
+    
+    // If all fields are valid
+    success.textContent = 'Registration successfull!';
+
+    const user = {
+        username: username.value,
+        email: email.value,
+        password: password.value,
+        confirmPassword: confirmPassword.value,
+    };
+    
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const existingEmail = users.find(currentUser => currentUser.username === username.value);
+    if(existingEmail){
+        alert(`Email ${email.value} already exists`);
+        return ;
+    }
+    users.push(user);
+   
+    localStorage.setItem('users', JSON.stringify(users)); 
+    window.location.href ='login.html';
+}); 
+
+
+//username validate
+function validUsername(){
+    if(username.value.trim() === ''){
+        //error
+        setError(username, 'Username is required');
+        return false
+    }
+    else{
+        //success
+        setSuccess(username);
+        return true
+    } 
+}
+
+//email
+function validateEmail(){
+   
+	const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!email.value.match(emailPattern)) {
+       setError(email, "please enter a valid email address")
+        return false
+    }
+    else{
+        setSuccess(email)
+        return true;
+    }
+}
+
+//password
+function validatePassword(){
+    if(password.value.length < 8){
+        setError(password, "password must be at least 8 character")
+        return false;
+    }
+    else{
+        setSuccess(password)
+        return true;
+    }
+}
+
+
+//confirmpassword
+function validateConfirmPassword(){
+    if(password.value.trim() === '' || confirmPassword.value.trim() === ''){
+        setError(confirmPassword, "password not match")
+        return false
+    }
+        
+    if(confirmPassword.value !== password.value){
+        setError(confirmPassword, "password not match!")
+        return false;
+    }
+    else{
+        setSuccess(confirmPassword)
+        return true;
+    }
+};
+
+
+//error 
+function setError(element, message){
+    element.classList.add('invalid');
+    element.classList.remove('valid');
+    error.textContent = message
+};
+
+//success
+function setSuccess(element, message){
+    element.classList.add('valid');
+    element.classList.remove('invalid');
+    // success.textContent = message
+};
+
+
+
+
+
