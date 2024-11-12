@@ -8,7 +8,7 @@ const confirmPassword = document.querySelector('#confirmPassword');
 const error = document.querySelector('#error');
 const success = document.querySelector('#success');
 
-//User Registration
+//==============User Registration======================
 userRegistrationForm.addEventListener('submit', function(event){
     event.preventDefault(); 
    
@@ -138,6 +138,31 @@ function setSuccess(element, message){
 };
 
 
+//==========User Login==============
 
+const loginForm = document.querySelector('#loginForm');
+const logInUsername = document.querySelector('#email');
+const loginPassword = document.querySelector('#password');
+
+//add login form eventListener
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+
+    const user = users.find((usr) => usr.email === email.value && usr.password === password.value);
+
+    if(!user){
+        alert("invalid");
+        return;
+    }
+    else{
+        alert("You'r now login")
+    }
+
+    //currentUse
+    localStorage.setItem('currentUser', JSON.stringify(user));
+    // window.location.href =''
+});
 
 
