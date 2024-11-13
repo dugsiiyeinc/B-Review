@@ -214,8 +214,6 @@ header h1{
   margin-inline: auto;
 }
 
-
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -275,6 +273,28 @@ header h1{
 
 
 
+.pagination {
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #f98866;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background-color: #000;
+}
+
+.pagination button.disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
 
 
 
