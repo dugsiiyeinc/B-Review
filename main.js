@@ -165,4 +165,28 @@ loginForm.addEventListener('submit', (e) => {
     // window.location.href =''
 });
 
+//===============All Bsinesses================
+const cardsPerPage = 8; // Number of cards to display per page, my page will display 8 at once
+let currentPage = 1; // Current page number
+let businessData = []; // Array to hold fetched data from data,json file
+
+const cardContainer = document.getElementById('card-container');
+const paginationContainer = document.getElementById('pagination');
+
+// Fetch data from JSON file
+fetch('data.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Theres Response error' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => {
+        businessData = data; // Store fetched data
+        displayCards(currentPage); // Display the first page
+        updatePagination(); // Update pagination controls
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+
 
