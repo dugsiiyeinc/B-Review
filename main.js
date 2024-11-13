@@ -213,5 +213,53 @@ function displayCards(page) {
     }
 }
 
+// Function to update paginations
+function updatePagination() {
+    // Clear existing pagination
+    paginationContainer.innerHTML = '';
+
+    // Calculate the total number of pages
+    const totalPages = Math.ceil(businessData.length / cardsPerPage);
+
+    // Create "Previous" button
+    const prevButton = document.createElement('button');
+    prevButton.innerText = 'Previous';
+    prevButton.disabled = currentPage === 1; // Disable if on the first page
+    prevButton.onclick = () => {
+        if (currentPage > 1) {
+            currentPage--;
+            displayCards(currentPage);
+            updatePagination();
+        }
+    };
+    paginationContainer.appendChild(prevButton);
+
+    // Create buttons for each page
+    for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement('button');
+        pageButton.innerText = i;
+        pageButton.className = (i === currentPage) ? 'active' : ''; // Highlight the active page
+        pageButton.onclick = () => {
+            currentPage = i;
+            displayCards(currentPage);
+            updatePagination();
+        };
+        paginationContainer.appendChild(pageButton);
+    }
+
+    // Create "Next" button
+    const nextButton = document.createElement('button');
+    nextButton.innerText = 'Next';
+    nextButton.disabled = currentPage === totalPages; // Disable if on the last page
+    nextButton.onclick = () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            displayCards(currentPage);
+            updatePagination();
+        }
+    };
+    paginationContainer.appendChild(nextButton);
+}
+
 
 
