@@ -1,39 +1,84 @@
 .main-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
     url(/images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 270px 0 400px;
-    width: 100%;
-    height: 100px;
-  }
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .content__title {
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-  }
-  .content__description {
-    text-transform: uppercase;
-    font-size: 3.125rem;
-    font-weight: 700;
-    margin: 15px 0 25px;
-  }
-  .content__description .em {
-    color: #f98866;
-      font-style: normal;
-    }
-  .section {
-      margin-top: 60px;
-      padding-top: 60px;
-    }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 170px 0 300px;
+  width: 100%;
+  height: 100px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.content__title {
+  text-transform: uppercase;
+  font-size: 3.125rem;
+
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.content__description {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 15px 0 25px;
+}
+.content__description .em {
+  color: #f98866;
+  font-style: normal;
+}
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Optional: limit max width of the form */
+  margin: 0 auto; /* Center the form */
+}
+
+.search-form {
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 40px; /* Space for the icon */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+  border: none;
+}
+
+.fa-search {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: #383838cc;
+  font-size: 18px;
+}
+
+.form-control {
+  background-color: #f98866;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Center the button vertically */
+}
+
+.form-control:hover {
+  background-color: #e76d4b; /* Darken on hover */
+}
+
+.section {
+  margin-top: 60px;
+  padding-top: 60px;
+  
+}
