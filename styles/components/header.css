@@ -1,135 +1,135 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color:#4b4b4d ;
-  color: white;
-  padding: 0 20px;
-}
-.navbar .logo{
-  font-size: 1.5em;
-  list-style: 60px;
-}
-.navbar-links{
-  height: 100%;
-}
-.navbar-links ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  /* margin: 0;
-  padding: 0; */
-}
-.navbar-links li{
-  padding: 0 10px;
-}
-.navbar-links a{
-  color:white;
-  text-decoration: none;
-  font-size: 1em;
-  line-height: 60px;
-  display: block;
-}
-.navbar-links a:hover{
- background-color: #f98866;
- padding: 0 10px;
- margin: 10px 0;
- border-radius:5px;
-}
-
-.navbar-links ul li button{
-background-color:#f98866 ;
- margin: 10px 0;
- padding: 0 10px;
- border-radius:5px;
- font-size: 1em;
- line-height: 60px;
- font-weight: 600;
-}
-.navbar-links ul li button .fa-user{
- font-size: 1.3em; 
- margin: 0;
- line-height: 60px;
-}
-/* Toggle Button */
-.toggle-button {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  cursor: pointer;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-/* Media Queries for Mobile Screens */
-@media (max-width: 768px) {
-  .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-
-  .toggle-button {
-      display: flex;
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#4b4b4d ;
+    color: white;
+    padding: 0 20px;
   }
-
-  .navbar-links {
-      width: 100%;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-      opacity: 0;
+  .navbar .logo{
+    font-size: 1.5em;
+    list-style: 60px;
   }
-
+  .navbar-links{
+    height: 100%;
+  }
   .navbar-links ul {
-      flex-direction: column;
-      width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* margin: 0;
+    padding: 0; */
   }
-
-  .navbar-links li {
-      text-align: center;
+  .navbar-links li{
+    padding: 0 10px;
   }
-
-  .navbar-links a {
-      padding: 10px;
-      line-height: 20px;
+  .navbar-links a{
+    color:white;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 60px;
+    display: block;
   }
-
-  .navbar.active .navbar-links {
-      max-height: 300px;
-      opacity: 1;
-      transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+  .navbar-links a:hover{
+   background-color: #f98866;
+   padding: 0 10px;
+   margin: 10px 0;
+   border-radius:5px;
   }
-  .toggle-button{
-   top: 0;
-   margin: 4px;
+  
+  .navbar-links ul li button{
+  background-color:#f98866 ;
+   margin: 10px 0;
+   padding: 0 10px;
+   border-radius:5px;
+   font-size: 1em;
+   line-height: 60px;
+   font-weight: 600;
   }
-
-  /* Change the toggle button bars for the open state */
-  .navbar.active .toggle-button .bar:nth-child(2) {
-      opacity: 0;
+  .navbar-links ul li button .fa-user{
+   font-size: 1.3em; 
+   margin: 0;
+   line-height: 60px;
   }
-
-  .navbar.active .toggle-button .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+  /* Toggle Button */
+  .toggle-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
   }
-
-  .navbar.active .toggle-button .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
   }
-}
+  
+  /* Media Queries for Mobile Screens */
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+        opacity: 0;
+    }
+  
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .navbar-links li {
+        text-align: center;
+    }
+  
+    .navbar-links a {
+        padding: 10px;
+        line-height: 20px;
+    }
+  
+    .navbar.active .navbar-links {
+        max-height: 300px;
+        opacity: 1;
+        transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+    }
+    .toggle-button{
+     top: 0;
+     margin: 4px;
+    }
+  
+    /* Change the toggle button bars for the open state */
+    .navbar.active .toggle-button .bar:nth-child(2) {
+        opacity: 0;
+    }
+  
+    .navbar.active .toggle-button .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+  
+    .navbar.active .toggle-button .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  }

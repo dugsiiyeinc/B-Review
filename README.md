@@ -70,7 +70,7 @@
 ## 7. Data Persistence
 **Local Storage**: Use local storage for a simple project or integrate a database for more complex needs.
 
-## 8. Admin Panel(waan ka discuss gereneynaa user authorities)
+## 8. Admin Panel(user authorities)
 **Admin Features**: Allow admins to manage businesses and users, including adding or removing businesses and moderating reviews.
 
 
