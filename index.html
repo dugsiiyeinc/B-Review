@@ -21,21 +21,24 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <h1>BReview</h1>
-      </div>
-      <div class="nav-bar">
+    <nav class="navbar">
+      <div class="logo">BReview</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="pages/admin.html">Create Business</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Details</a></li>
           <li><a href="#">Contect Us</a></li>
+          <li><button><i class="fa-solid fa-user"></i>Sign In</button></li>
         </ul>
-        <button><i class="fa-solid fa-user"></i>Sign In</button>
       </div>
-    </header>
+    </nav>
     <main class="main">
       <!-- main bannar or section hero -->
       <section class="main-banner">
@@ -45,7 +48,7 @@
             <h3 class="content__description em">
               platform for creatives around the world
             </h3>
-             <!-- seaching Business Section form -->
+            <!-- seaching Business Section form -->
             <form class="form">
               <input
                 type="text"
@@ -56,9 +59,10 @@
               <i class="fa fa-search" aria-hidden="true"></i>
               <button type="submit" class="form-control">Search</button>
             </form>
-          </div>        </div>
+          </div>
+        </div>
       </section>
-     
+
       <!-- Business Review Section simple -->
       <section class="some-br container">
         <section id="business-review">
@@ -168,5 +172,6 @@
         </p>
       </div>
     </footer>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>
