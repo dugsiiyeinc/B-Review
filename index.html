@@ -21,21 +21,24 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <h1>BReview</h1>
-      </div>
-      <div class="nav-bar">
+    <nav class="navbar">
+      <div class="logo">BReview</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="pages/admin.html">Create Business</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Details</a></li>
-          <li><a href="#">Contect Us</a></li>
+          <li><a href="/pages/contact.html">Contect Us</a></li>
+          <li><button><i class="fa-solid fa-user"></i>Sign In</button></li>
         </ul>
-        <button><i class="fa-solid fa-user"></i>Sign In</button>
       </div>
-    </header>
+    </nav>
     <main class="main">
       <!-- main bannar or section hero -->
       <section class="main-banner">
@@ -168,5 +171,6 @@
         </p>
       </div>
     </footer>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>
